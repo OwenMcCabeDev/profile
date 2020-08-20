@@ -330,6 +330,7 @@ Hero
 */
 .hero .underline {
   margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
   margin-left: 0;
 }
 .hero-img {
