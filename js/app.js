@@ -1,6 +1,10 @@
 const navbar = document.querySelector("#nav");
 const navBtn = document.querySelector("#nav-btn");
 const closeBtn = document.querySelector("#close-btn");
+const closeBtn1 = document.querySelector("#close-btn1");
+const closeBtn2 = document.querySelector("#close-btn2");
+const closeBtn3 = document.querySelector("#close-btn3");
+// const closeBtn4 = document.querySelector("#close-btn4"); use if more NAV Links
 const sidebar = document.querySelector("#sidebar");
 const date = document.querySelector("#date");
 // add fixed class to navbar
@@ -18,6 +22,16 @@ navBtn.addEventListener("click", function () {
 closeBtn.addEventListener("click", function () {
   sidebar.classList.remove("show-sidebar");
 });
+closeBtn2.addEventListener("click", function () {
+  sidebar.classList.remove("show-sidebar");
+});
+closeBtn3.addEventListener("click", function () {
+  sidebar.classList.remove("show-sidebar");
+});
+// closeBtn4.addEventListener("click", function () {
+//   sidebar.classList.remove("show-sidebar");
+// }); use if more NAV links
+
 // set year
 date.innerHTML = new Date().getFullYear();
 //Get the button:

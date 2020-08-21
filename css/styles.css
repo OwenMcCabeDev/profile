@@ -332,7 +332,7 @@ Sidebar
 .social-icon:hover {
   color: var(--clr-primary-1);
 }
-.close-btn {
+/* .close-btn {
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -344,8 +344,8 @@ Sidebar
 }
 .close-btn:hover {
   color: #e66b6b;
-  cursor: pointer;
-}
+  cursor: pointer; 
+}*/
 
 /*
 =============== 
