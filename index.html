@@ -15,6 +15,13 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> -->
+    <i
+      class="fas fa-angle-double-up"
+      onclick="topFunction()"
+      id="myBtn"
+      title="Go to Top"
+    ></i>
     <!-- navbar -->
     <nav class="nav" id="nav">
       <div class="nav-center">
@@ -31,13 +38,16 @@
             <a href="index.html">Home</a>
           </li>
           <li>
-            <a href="about.html">About</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="projects.html">Projects</a>
+            <a href="#skills">Skills</a>
           </li>
           <li>
-            <a href="contact.html">Contact</a>
+            <a href="#career">career</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -55,13 +65,16 @@
             <a href="index.html">Home</a>
           </li>
           <li>
-            <a href="about.html">About</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="projects.html">Projects</a>
+            <a href="#skills">Skills</a>
           </li>
           <li>
-            <a href="contact.html">Contact</a>
+            <a href="#career">career</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
         <!-- Social Icons -->
@@ -92,8 +105,13 @@
         <article class="hero-info">
           <div class="underline"></div>
           <h1>Owen McCabe</h1>
-          <h4>Business Operations Manager</h4>
-          <a href="contact.html" class="btn hero-btn">Contact Me</a>
+          <h4>
+            A WebSite designed and created to support my application for the
+            role of Web Service Manager at Newcastle Strategic Solutions
+          </h4>
+          <a href="mailto:owenm100@gmail.com" class="btn hero-btn"
+            >Contact Me</a
+          >
           <!-- Social Icons -->
           <ul class="social-icons hero-icon">
             <li>
@@ -111,12 +129,12 @@
     </header>
     <!-- end of header -->
     <!-- about -->
-    <section class="section about">
+    <section class="section about" id="about">
       <div class="section-center about-center">
         <article class="about-img">
           <img
             class="hero-photo"
-            src="./images/hero-img-tiny.jpeg"
+            src="./images/about-img.jpg"
             alt="Picture of me"
           />
         </article>
@@ -128,104 +146,29 @@
           </div>
           <!-- end section title -->
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam
-            aspernatur eum vero sit. Earum ipsum ea ratione asperiores
-            repudiandae consectetur placeat quos dolorum beatae autem tempora
-            non optio, rem consequuntur repellendus tempore. Voluptatum ullam
-            exercitationem nihil accusamus optio numquam consequuntur!
+            Skilled Business and Operations Manager in financial services with a
+            strong interest and a technical knowledge of website development and
+            the relevant technologies. Career progression in effectively leading
+            managers and teams, as part of an operation of over four hundred
+            people to high standards, whilst driving continuous change to
+            deliver the best possible outcome for customers and other
+            stakeholders.
           </p>
           <p>
-            Skilled Business and Operations Manager in financial services with a
-            particular focus on process improvement. BSc in Psychology and a
-            Postgraduate Certificate in Education. Career progression in
-            effectively leading managers and teams, as part of an operation of
-            over four hundred people to high standards, in high-pressure,
-            quality driven environment.
+            To support this application and CV I have coded from scratch using
+            VS Code this fully responsive website (owenmccabe.co.uk) using
+            semantic HTML5, CSS3 and JavaScript utilising Git for version
+            control and Mozilla Firefox and Google Chrome Developer Tools for
+            debugging. This also shows my understanding of DNS configuration for
+            domains and web hosting.
           </p>
-          <a href="about.html" class="btn about-btn">about me</a>
+          <a href="" class="btn about-btn">My CV</a>
         </article>
       </div>
     </section>
     <!-- end of about -->
-    <!-- services -->
-    <section class="section bg-grey">
-      <div class="section-title services-title">
-        <h2>?????</h2>
-        <div class="underline"></div>
-      </div>
-      <div class="services-center section-center">
-        <!-- single service -->
-        <article class="service">
-          <i class="fas fa-code service-icon"></i>
-          <h4>Title 1</h4>
-          <div class="underline"></div>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-            voluptates eius deserunt, reiciendis atque maxime corporis
-            excepturi! Expedita, aperiam veritatis.
-          </p>
-        </article>
-        <!-- End of single service -->
-        <!-- single service -->
-        <article class="service">
-          <i class="fab fa-sketch service-icon"></i>
-          <h4>Title 2</h4>
-          <div class="underline"></div>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-            voluptates eius deserunt, reiciendis atque maxime corporis
-            excepturi! Expedita, aperiam veritatis.
-          </p>
-        </article>
-        <!-- End of single service -->
-        <!-- single service -->
-        <article class="service">
-          <i class="fab fa-android service-icon"></i>
-          <h4>Title 3</h4>
-          <div class="underline"></div>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-            voluptates eius deserunt, reiciendis atque maxime corporis
-            excepturi! Expedita, aperiam veritatis.
-          </p>
-        </article>
-        <!-- End of single service -->
-      </div>
-    </section>
-    <!-- end of services -->
-    <!-- projects -->
-
-    <!-- end of projects -->
-    <!-- connect -->
-    <section class="connect">
-      <video
-        controls
-        autoplay
-        muted
-        loop
-        class="video-container"
-        poster="./images/project-1.jpeg"
-      >
-        <!-- <source src="/videos/connect.mp4" type="video/mp4" /> -->
-        Sorry, your browser does not support embedded videos
-      </video>
-      <div class="video-banner">
-        <!-- section title -->
-        <div class="section-title">
-          <h2>get in touch</h2>
-          <div class="underline"></div>
-        </div>
-        <!-- end section title -->
-        <p class="video-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-          dolore laboriosam ex mollitia cum magni! Dolores a unde quia debitis.
-        </p>
-        <a href="/contact.html" class="btn">Contact Me</a>
-      </div>
-    </section>
-    <!-- end of connect -->
     <!-- skills -->
-    <section class="skills">
+    <section class="skills" id="skills">
       <!-- section title -->
       <div class="section-title">
         <h2>skills</h2>
@@ -234,33 +177,25 @@
       <!-- end section title -->
       <div class="section-center skills-center">
         <article>
-          <h3>Title 1</h3>
+          <h3>Leadership and management</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius omnis
-            quaerat dolorum possimus, voluptas dicta ut, maxime nesciunt impedit
-            officia dolorem ad odit nihil consequatur commodi suscipit
-            temporibus excepturi placeat exercitationem illo ratione doloribus
-            ipsam atque? Similique deleniti enim quam.
+Experienced in both people management at a team level and managing managers within a financial services operation on behalf of a 3rd party. Responsible for a department of 300 - 400 people, ensuring all required communication and training is delivered effectivley whilst motivating people to succeed in a high preasure enviroment. 
           </p>
-          <h3>Title 2</h3>
+          <h3>Technical abilities</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius omnis
-            quaerat dolorum possimus, voluptas dicta ut, maxime nesciunt impedit
-            officia dolorem ad odit nihil consequatur commodi suscipit
-            temporibus excepturi placeat exercitationem illo ratione doloribus
-            ipsam atque? Similique deleniti enim quam.
+Good understanding of the web and have self taught HTML5, CSS3 and Javascript (DOM manipulation) to a level that I was able to produce this website to support the applciation. I learn process quickly, in my current organisation I was promoted to Subject Matter Expert (a floor walking role) after only 10 months, ahead of more experienced peers due to my deep process knowledge.
           </p>
-          <h3>Title 2</h3>
+          <h3>Communication</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius omnis
-            quaerat dolorum possimus, voluptas dicta ut, maxime nesciunt impedit
-            officia dolorem ad odit nihil consequatur commodi suscipit
-            temporibus excepturi placeat exercitationem illo ratione doloribus
-            ipsam atque? Similique deleniti enim quam.
+Confident liasing at all levels from new recruits in entry level jobs to director level, which I do both of regularaly in my current role. I am able to explain complex processes in a way that is simple and supports others to make decisions. I am also able to use my process knowledge to influence those decisions to achieve the best outcomes for customers and other stakeholders. 
           </p>
         </article>
         <article>
-          <h3>Title 2</h3>
+          <h3>Project Management</h3>
+          <p>
+Experienced in leading projects for the operation that involve multiple areas of the bank. I identify risks and controls whilst seeking to continuously improve the project I am inolved in - even once the project is deemed complete I look for ways in which it could be improved further once operationalised. 
+          </p>
+          <h3>Analytics and Planning</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius omnis
             quaerat dolorum possimus, voluptas dicta ut, maxime nesciunt impedit
@@ -268,15 +203,7 @@
             temporibus excepturi placeat exercitationem illo ratione doloribus
             ipsam atque? Similique deleniti enim quam.
           </p>
-          <h3>Title 2</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius omnis
-            quaerat dolorum possimus, voluptas dicta ut, maxime nesciunt impedit
-            officia dolorem ad odit nihil consequatur commodi suscipit
-            temporibus excepturi placeat exercitationem illo ratione doloribus
-            ipsam atque? Similique deleniti enim quam.
-          </p>
-          <h3>Title 2</h3>
+          <h3>Problem Solving</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius omnis
             quaerat dolorum possimus, voluptas dicta ut, maxime nesciunt impedit
@@ -289,7 +216,7 @@
     </section>
     <!-- end of skills -->
     <!-- timeline -->
-    <section class="section timeline">
+    <section class="section timeline" id="career">
       <!-- section title -->
       <div class="section-title">
         <h2>Career Summary</h2>
@@ -301,11 +228,13 @@
         <article class="timeline-item">
           <h4>Business Manager - Santander UK</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
-            suscipit dolore repellendus unde veritatis eligendi facere ullam
-            voluptatum odit quibusdam?
+            <ul>
+              <li>
+                Managing and operationalising new processes and projects from inception to delivery;
+              </li>
+            </ul>
           </p>
-          <span class="number">Preasent 2018</span>
+          <span class="number">2018 Present</span>
         </article>
 
         <!-- end single timeline item -->
@@ -317,7 +246,7 @@
             suscipit dolore repellendus unde veritatis eligendi facere ullam
             voluptatum odit quibusdam?
           </p>
-          <span class="number">2018 2016</span>
+          <span class="number">2016 2018</span>
         </article>
 
         <!-- end single timeline item -->
@@ -329,7 +258,7 @@
             suscipit dolore repellendus unde veritatis eligendi facere ullam
             voluptatum odit quibusdam?
           </p>
-          <span class="number">2016 2015</span>
+          <span class="number">2015 2016</span>
         </article>
 
         <!-- end single timeline item -->
@@ -341,7 +270,7 @@
             suscipit dolore repellendus unde veritatis eligendi facere ullam
             voluptatum odit quibusdam?
           </p>
-          <span class="number">2015 2014</span>
+          <span class="number">2014 2015</span>
         </article>
 
         <!-- end single timeline item -->
@@ -353,7 +282,7 @@
             suscipit dolore repellendus unde veritatis eligendi facere ullam
             voluptatum odit quibusdam?
           </p>
-          <span class="number">2014 2013</span>
+          <span class="number">2013 2014</span>
         </article>
 
         <!-- end single timeline item -->
@@ -365,7 +294,7 @@
             suscipit dolore repellendus unde veritatis eligendi facere ullam
             voluptatum odit quibusdam?
           </p>
-          <span class="number">2013 2010</span>
+          <span class="number">2010 2013</span>
         </article>
 
         <!-- end single timeline item -->
@@ -377,18 +306,106 @@
             suscipit dolore repellendus unde veritatis eligendi facere ullam
             voluptatum odit quibusdam?
           </p>
-          <span class="number">2013 2008</span>
+          <span class="number">2008 2013</span>
         </article>
 
         <!-- end single timeline item -->
       </div>
     </section>
     <!--end of  timeline -->
-    <!-- blog -->
+    <!-- services -->
+    <section class="section bg-grey">
+      <div class="section-title services-title">
+        <h2>technologies use to build this Website</h2>
+        <div class="underline"></div>
+        <p>As well as using Visual Studio Code as an editor, Git for source control and Chrome and Firefox Developer tools for debugging and testing responsiveness the below Web Technologies were used </p>
+      </div>
+      <div class="services-center section-center">
+        
+        <!-- single service -->
+        <article class="service">
+          <i class="fab fa-html5 service-icon"></i>
+          <h4>HTML</h4>
+          <div class="underline"></div>
+          <p>
+Strong working knowledge of semantic HTML5 for markup.
+          </p>
+        </article>
+        <!-- End of single service -->
+        <!-- single service -->
+        <article class="service">
+          <i class="fab fa-css3-alt service-icon"></i>
+          <h4>CSS</h4>
+          <div class="underline"></div>
+          <p>
+Strong working knowledge of CSS3 to create responsive WebSites. Able to use CSS to create more complex layouts such as the use of borders to create the effect used in carrer summary. Some experience with the CSS preprocessor SASS.
+          </p>
+        </article>
+        <!-- End of single service -->
+        <!-- single service -->
+        <article class="service">
+          <i class="fab fa-js-square service-icon"></i>
+          <h4>JavaScript</h4>
+          <div class="underline"></div>
+          <p>
+            Basic knowledge of JavScript, used to create the responsive mobile and fixed navbars in this site as well as the "to top" arrow on the page.
+          </p>
+        </article>
+        <!-- End of single service -->
+      </div>
+    </section>
+    <!-- end of services -->
+    <!-- projects -->
 
-    <!--end of  blog -->
+    <!-- end of projects -->
+    <!-- connect -->
+    <section class="connect" id="contact">
+      <video
+        controls
+        autoplay
+        muted
+        loop
+        class="video-container"
+        poster="./images/project-1.jpeg"
+      >
+        <source src="/videos/connect.mp4" type="video/mp4" />
+        Sorry, your browser does not support embedded videos
+      </video>
+      <div class="video-banner">
+        <!-- section title -->
+        <div class="section-title">
+          <h2>get in touch</h2>
+          <div class="underline"></div>
+        </div>
+        <!-- end section title -->
+        <div class="container">
+          <p class="video-text">
+            To discuss any part of the application, my work experience or skills
+            please contact me at
+            <a href="mailto:owenm100@gmail.com">owenm100@gmail.com</a>
+          </p>
+        </div>
+        <a href="mailto:owenm100@gmail.com" class="btn">Contact Me</a>
+      </div>
+    </section>
+    <!-- end of connect -->
+
     <!-- footer -->
-
+    <footer class="footer">
+      <!-- Social Icons -->
+      <ul>
+        <li class="social-icons">
+          <a
+            href="https://www.linkedin.com/in/owen-mccabe-a75785bb/"
+            class="social-icon"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+      </ul>
+      <p>&copy; <span id="date"></span> Owen McCabe - All rights reserved</p>
+    </footer>
     <script src="./js/app.js"></script>
   </body>
 </html>
