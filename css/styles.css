@@ -3,7 +3,6 @@
 Fonts
 ===============
 */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
 
 /*
 =============== 
@@ -144,7 +143,6 @@ p {
   letter-spacing: var(--spacing);
   display: inline-block;
   font-weight: 700;
-  -webkit-transition: var(--transition);
   transition: var(--transition);
   font-size: 0.875rem;
   border: 2px solid transparent;
@@ -250,6 +248,7 @@ Navbar
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     justify-items: center;
+    -moz-column-gap: 2rem;
     column-gap: 2rem;
     justify-self: end;
   }
@@ -405,6 +404,7 @@ Hero
   .hero-photo {
     max-width: 20rem;
     max-height: 25rem;
+    -o-object-fit: cover;
     object-fit: cover;
     border-radius: var(--radius);
     position: relative;
@@ -418,6 +418,7 @@ Hero
 .hero-photo {
   max-width: 20rem;
   max-height: 25rem;
+  -o-object-fit: cover;
   object-fit: cover;
   border-radius: var(--radius);
   position: relative;
@@ -521,6 +522,7 @@ Services
   .services-center {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 2rem;
     column-gap: 2rem;
   }
 }
@@ -552,6 +554,7 @@ Connect
   left: 0;
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
   z-index: -2;
 }
@@ -580,6 +583,15 @@ Connect
   background: var(--clr-white);
   padding: 3rem 5rem 12rem 5rem;
   text-align: center;
+  -webkit-clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    75% 75%,
+    75% 100%,
+    50% 75%,
+    0% 75%
+  );
   clip-path: polygon(
     0% 0%,
     100% 0%,
@@ -599,8 +611,10 @@ Skills
 @media screen and (min-width: 768px) {
   .skills-center {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+    -moz-column-gap: 10px;
+    column-gap: 10px;
   }
 }
 .skills {
